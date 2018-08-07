@@ -94,6 +94,8 @@ body {
 .form-signup {
     color:  #434343;
     font-size: 20px;
+    font-weight: 400;
+
     float: left;
 }
 
@@ -107,16 +109,19 @@ body {
 .form-text {
     color: #434343;
     font-size: 14px;
-    font-weight: 400;
     line-height: 21px;
+}
+
+.form-networks {
+
 }
 
 .networks-button {
     width: 157px;
     height: 46px;
     border-radius: 3px;
-    position: relative;
     float: left;
+    position: relative;
 }
 
 .networks-button:nth-child(2n){
@@ -134,21 +139,16 @@ body {
 .nw-text {
     color:  #ffffff;
     text-decoration: none;
+    position: absolute;
+    left: 47px;
+    top: 16px;
 }
 
 .nw-text:before {
     content: '';
-    width: 1px;
-    height: 28px;
     border: 1px solid transparent;
     border-left-color: rgba(0,0,0,0.2);
-    position: absolute;
-    left: 50px;
-    top: 7px;
-}
-
-.form-img {
-
+    margin-right: 18px;
 }
 
 .sprite-facebook {
@@ -156,7 +156,9 @@ body {
     object-position: -103px -10px;
     width: 10px;
     height: 20px;
-    margin: 13px 20px;
+    position: absolute;
+    left: 20px;
+    top: 13px;
 }
 
 .sprite-google {
@@ -164,11 +166,98 @@ body {
     object-position: -58px -10px;
     width: 25px;
     height: 16px;
-    margin: 13px 15px;
+    position: absolute;
+    left: 13px;
+    top: 15px;
 }
 
 .text-green {
     color: #3cb878;
+}
+
+.form-or {
+    color: #434343;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 26px;
+    margin-bottom: 14px;
+}
+
+.form-or span{
+    position: relative;
+}
+
+.form-or span:before {
+    display: block;
+    width:1000px;
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    top:50%;
+    right: 25px;
+}
+
+.form-or span:after {
+    display: block;
+    width:1000px;
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    top:50%;
+    left: 25px;
+}
+
+.form-input {
+    width: 322px;
+    height: 46px;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 3px;
+    margin-bottom: 9px;
+}
+
+.form-input::placeholder {
+    color:  #bebebe;
+    font-size: 14px;
+    line-height: 21px;
+    padding-left: 15px;
+}
+
+.input-active {
+    border-radius: 3px;
+    background-color:  #ffffff;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.21);
+    margin-bottom: 19px;
+}
+
+.input-active::placeholder {
+    color:  #434343;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+}
+
+.form-checkbox {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.form-button {
+    width: 322px;
+    height: 46px;
+    background: #3cb878;
+    border-radius: 3px;
+    border: none;
+}
+
+.form-button-text {
+    color:  #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 32px;
 }
 
 .clearfix {
