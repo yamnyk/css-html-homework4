@@ -24,7 +24,8 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 700;
     float: left;
 }
 
