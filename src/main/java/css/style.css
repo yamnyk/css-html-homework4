@@ -42,20 +42,39 @@ body {
     margin-right: 28px;
 }
 
+.header-icon:hover {
+    background: url("../img/css_sprites _HOVER.png") no-repeat;
+}
+
 .ico-calendar {
     cursor: pointer;
-    background-position: -49px -50px;
+    background-position: -50px -50px;
+}
+
+.ico-calendar:hover {
+    cursor: pointer;
+    background-position: -10px -50px;
 }
 
 .ico-forum {
     cursor: pointer;
-    background-position: -12px -10px;
+    background-position: -11px -10px;
     width: 27px;
+}
+
+.ico-forum:hover {
+    cursor: pointer;
+    background-position: -11px -10px;
 }
 
 .ico-journey {
     cursor: pointer;
     background-position: -10px -49px;
+}
+
+.ico-journey:hover {
+    cursor: pointer;
+    background-position: -58px -9px;
 }
 
 .header-text {
