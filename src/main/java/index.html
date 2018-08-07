@@ -7,57 +7,54 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<section>
-	<div class="header-background">
-		<div class="container">
-			<div class="header-content">
-				<a class="header-logo" href="#">Journey</a>
-				<p class="header-text">Welcome, <a href="#" class="text-green">Log In</a> or <a href="#" class="text-green">Sign Up</a>
-				</p>
-				<div class="header-icon ico-journey"><a href="#"></a></div>
-				<div class="header-icon ico-forum"><a href="#"></a></div>
-				<div class="header-icon ico-calendar"><a href="#"></a></div>
-			</div>
+<nav class="navbar">
+	<div class="container clearfix">
+		<a class="navbar-logo" href="#">Journey</a>
+		<div class="navbar-right">
+			<a class="navbar-icon ico-calendar" href="#"></a>
+			<a class="navbar-icon ico-forum" href="#"></a>
+			<a class="navbar-icon ico-journey" href="#"></a>
+			<p class="navbar-text">Welcome, <a href="#" class="text-green">Log In</a> or <a href="#" class="text-green">Sign Up</a>
+			</p>
 		</div>
+
 	</div>
-</section>
+</nav>
 
-<section>
+<section class="vert-align">
 	<div class="form-shape">
-		<div class="form-container">
-			<div class="form-head clearfix">
-				<h2 class="form-signup">Sign Up</h2>
-				<a href="#" class="form-login">Log In</a>
-			</div>
-			<div class="clearfix">
-				<div class="networks-button nw-blue">
-					<img src="img/css_sprites.png" alt="fuck ya!" class="sprite-facebook">
-						<a class="nw-text" href="#">Facebook</a>
-				</div>
-				<div class="networks-button nw-red">
-					<img src="img/css_sprites.png" alt="fuck ya!" class="sprite-google">
-					<a class="nw-text" href="#">Google</a>
-				</div>
-			</div>
-
-			<div class="form-or">
-				<span>or</span>
-			</div>
-
-			<form action="#">
-				<input type="text" class="form-input input-active" placeholder="First Name">
-				<input type="text" class="form-input" placeholder="Last Name">
-				<input type="email"class="form-input" placeholder="Email">
-				<input type="password" class="form-input" placeholder="Choose Password">
-				<input type="password" class="form-input" placeholder="Confirm Password">
-				<input type="checkbox" class="form-checkbox" name="terms-conditions" value="1" checked><span class="form-text">Agree our <span class="form-text text-green">Terms & Conditions</span></span><br>
-				<button type="submit" class="form-button">
-					<span class="form-button-text">
-						Create Account
-					</span>
-				</button>
-			</form>
+		<div class="form-head clearfix">
+			<h2 class="form-signup">Sign Up</h2>
+			<a href="#" class="form-login">Log In</a>
 		</div>
+		<div class="clearfix">
+			<button class="networks-button nw-blue">
+				<img src="img/css_sprites.png" alt="fuck ya!" class="sprite-facebook">
+				<a class="nw-text" href="#">Facebook</a>
+			</button>
+			<button class="networks-button nw-red">
+				<img src="img/css_sprites.png" alt="fuck ya!" class="sprite-google">
+				<a class="nw-text" href="#">Google</a>
+			</button>
+		</div>
+
+		<div class="form-or">
+			<span>or</span>
+		</div>
+
+		<form action="#">
+			<input type="text" class="form-input input-active" placeholder="First Name">
+			<input type="text" class="form-input" placeholder="Last Name">
+			<input type="email"class="form-input" placeholder="Email">
+			<input type="password" class="form-input" placeholder="Choose Password">
+			<input type="password" class="form-input" placeholder="Confirm Password">
+			<label for="checkbox" class="checkbox">
+				<input id="checkbox" type="checkbox" class="form-checkbox" name="terms-conditions" value="1" checked><span class="form-text">Agree our <span class="form-text text-green">Terms & Conditions</span></span><br>
+			</label>
+			<button type="submit" class="form-button">
+						Create Account
+			</button>
+		</form>
 	</div>
 </section>
 </body>

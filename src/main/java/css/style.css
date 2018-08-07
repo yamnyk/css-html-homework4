@@ -1,26 +1,29 @@
 body {
-    background: url("../img/rana-sawalha-364253-unsplash.png") no-repeat center fixed;
+    backgrobeautified../img/rana-sawalha-364253-unsplash.png") no-repeat center fixed;
     background-size: cover;
     font-family: 'Verdana', sans-serif;
 }
 
+.vert-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 54px);
+}
+
 .container {
-    width: 1030px;
+    width: 1200px;
     margin: 0 auto;
 }
 
-.header-background {
+.navbar {
     width: 100%;
-    height: 54px;
     background-color: rgba(0,0,0,0.38);
-    margin-bottom: 65px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
-.header-content {
-    padding: 18px;
-}
-
-.header-logo {
+.navbar-logo {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
@@ -29,20 +32,26 @@ body {
     float: left;
 }
 
-.header-logo:hover {
+.navbar-logo:hover {
     transition: 0.4s color linear;
     color: #3cb878;
 }
 
-.header-icon {
+.navbar-right {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-icon {
     width: 23px;
     height: 23px;
     background: url("../img/css_sprites.png") no-repeat;
-    float: right;
     margin-right: 28px;
+    display: inline-block;
 }
 
-.header-icon:hover {
+.navbar-icon:hover {
     background: url("../img/css_sprites _HOVER.png") no-repeat;
 }
 
@@ -77,25 +86,24 @@ body {
     background-position: -58px -9px;
 }
 
-.header-text {
+.navbar-text {
     color:  white;
     font-size: 14px;
-    line-height: 21px;
-    float: right;
+    display: inline-block;
 }
 
-.header-text a{
+.navbar-text a{
     text-decoration: none;
 }
 
 .form-shape {
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.52);
     width: 444px;
-    height: 584px;
     background-color: #fff;
     border-radius: 10px;
-    margin: 0 auto;
     position: relative;
+    padding: 0 60px 30px 60px;
+    box-sizing: border-box;
 }
 
 .form-shape:before {
@@ -103,6 +111,7 @@ body {
     border: 9px solid #3cb878;
     position: absolute;
     top: 30px;
+    left: 0;
 }
 
 .form-container {
@@ -111,7 +120,6 @@ body {
 }
 
 .form-head {
-    width: 100%;
     padding-top: 28px;
     margin-bottom: 15px;
 }
@@ -143,11 +151,13 @@ body {
 }
 
 .networks-button {
-    width: 157px;
-    height: 46px;
+    width: 153px;
+    height: 43px;
     border-radius: 3px;
     float: left;
     position: relative;
+    border: none;
+    cursor: pointer;
 }
 
 .networks-button:nth-child(2n){
@@ -158,16 +168,26 @@ body {
     background-color: #305db8;
 }
 
+.nw-blue:hover {
+    background-color: #214997;
+}
+
 .nw-red {
     background-color: #df4a32;
+}
+
+.nw-red:hover {
+    background-color: #c43f28;
 }
 
 .nw-text {
     color:  #ffffff;
     text-decoration: none;
+    font-size: 16px;
+    line-height: 21px;
     position: absolute;
     left: 47px;
-    top: 16px;
+    top: 11px;
 }
 
 .nw-text:before {
@@ -184,7 +204,7 @@ body {
     height: 20px;
     position: absolute;
     left: 20px;
-    top: 13px;
+    top: 11px;
 }
 
 .sprite-google {
@@ -194,7 +214,7 @@ body {
     height: 16px;
     position: absolute;
     left: 13px;
-    top: 15px;
+    top: 13px;
 }
 
 .text-green {
@@ -240,45 +260,49 @@ body {
 }
 
 .form-input {
-    width: 322px;
-    height: 46px;
+    width: 100%;
+    height: 42px;
     border: 1px solid rgba(0,0,0,0.08);
     border-radius: 3px;
     margin-bottom: 9px;
+    outline: none;
+    padding-left: 15px;
+    box-sizing: border-box;
 }
 
 .form-input::placeholder {
     color:  #bebebe;
     font-size: 14px;
     line-height: 21px;
-    padding-left: 15px;
 }
 
-.form-input::placeholder:hover {
+.form-input:hover {
+    transition: 0.2s linear all;
+    border-radius: 3px;
+    background-color:  #ffffff;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.21);
+    bottom: 10px;
+}
+
+.form-input:hover::placeholder {
+    transition: 0.2s color linear;
     color:  #434343;
 }
 
 .input-active {
     border-radius: 3px;
-    background-color:  #ffffff;
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.21);
-    margin-bottom: 19px;
-}
-
-.form-input:hover {
-    transition: 0.2s linear;
-    border-radius: 3px;
-    background-color:  #ffffff;
-    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.21);
-    margin-bottom: 19px;
+    outline: none;
+    padding-left: 15px;
+    box-sizing: border-box;
 }
 
 .input-active::placeholder {
-    color:  #434343;
     font-size: 14px;
-    font-weight: 400;
     line-height: 21px;
+    font-weight: 400;
     text-align: left;
+    color:  #434343;
 }
 
 .form-checkbox {
@@ -292,17 +316,16 @@ body {
     background: #3cb878;
     border-radius: 3px;
     border: none;
-}
-
-.form-button-text {
+    cursor: pointer;
     color:  #fff;
     font-size: 16px;
-    font-weight: 400;
-    line-height: 21px;
-    margin-bottom: 32px;
 }
 
-.clearfix {
+.form-button:hover {
+    background-color: #2f9b65;
+}
+
+.clearfix::after {
     content: '';
     display: table;
     clear: both;
